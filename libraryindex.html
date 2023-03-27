@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="librarystyle.css">
+    <script src="https://kit.fontawesome.com/bd1cc8308d.js" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+
+<!--LIBRARY TECHNICIAN'S PAGE-->
+<!--LIBRARY TECHNICIAN'S MENU PAGE-->
+<div class="menu" id="menu">
+    <h3 class="menu-title1">Library Technician's Page</h3>
+    <div class="menu-body">
+        <div class="menu-container">
+            <button class="menu-tile1" id="menubtn1">
+                <a href="#add"><i class="fa-solid fa-plus"></i></a>
+                <span class="menu-title">Add a book</span>
+            </button>
+            <!--show upon click JS-->
+
+
+
+            <button class="menu-tile2" id="menubtn2">
+                <a href="#delete"><i class="fa-solid fa-trash"></i></a>
+                <span class="menu-title">Delete a book</span>
+            </button>
+            <!--show upon click JS-->
+
+
+
+
+
+            <button class="menu-tile3" id="menubtn3">
+                <a href="#return"><i class="fa-sharp fa-solid fa-arrow-rotate-left"></i></a>
+                <span class="menu-title">Return a book</span>
+            </button>
+            <!--show upon click JS-->
+
+
+
+            <button class="menu-tile4" id="menubtn4">
+                <a href="#checkout"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                <span class="menu-title">Check-out a book</span>
+            </button>
+            <!--show upon click JS-->
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--ADD A BOOK-->
+<div class ="container" id="add">
+    <form name="submit-to-google-sheet">
+        <h3>Technician: Add a book</h3>
+        <div class="row">
+            <div class="col1">
+                <div class="inputBox">
+                    <span>BOOK NUMBER</span>
+                    <input type="number" name="number" placeholder="Enter book number." required>
+                </div>
+                <div class="inputBox">
+                    <span>TITLE</span>
+                    <input type="text" name="email" placeholder="Enter title." required>
+                </div>
+                <div class="inputBox">
+                    <span>AUTHOR</span>
+                    <input type="text" name="author" placeholder="Name of the author." required>
+                </div>
+                <div class="inputBox">
+                    <label for="booktype">BOOK TYPE</label><br>
+                        <input type="radio" id="f" name="booktype" value="fiction">
+                        <label for="fiction">Ficition</label><br>
+                        <input type="radio" id="nf" name="booktype" value="nonfiction">
+                        <label for="nonfiction">Non-Fiction</label><br>
+                        <input type="radio" id="gn" name="booktype" value="graphicnovel">
+                        <label for="graphicnovel">Graphic Novel</label><br>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="inputBox">
+                    <label for="pubdate">PUBLICATION DATE</label><br>
+                    <select name="pubdate" id="pubdate" class="pubdate">
+                        <option value="b2000">Before 2000</option>
+                        <option value="2001-2005">2001-2005</option>
+                        <option value="2006-2010">2006-2010</option>
+                        <option value="2011-2015">2011-2015</option>
+                        <option value="2016-2020">2016-2020</option>
+                        <option value="2021-2023">2016-2020</option>
+                    </select>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <label for="notes">NOTES</label><br>
+                    <textarea name="notes" rows="6" placeholder="Type your notes here..." class="notesinput"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Add a book!" class="submit-btn">
+    </form>
+    <!--data to google sheets JS-->
+
+</div>
+
+<!--CHECKOUT A BOOK-->
+<div class ="container1" id="checkout">
+    <form action="">
+        <h3>Technician: Check-Out A Book</h3>
+        <div class="row">
+            <div class="col3">
+                <div class="inputBox">
+                    <span>BOOK NUMBER</span>
+                    <input type="number" placeholder="Enter book number." required>
+                </div>
+                <div class="inputBox">
+                    <label for="notes">NOTES</label><br>
+                    <textarea name="notes" rows="6" placeholder="Type your notes here..." class="notesinput"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Check-Out Book!" class="submit-btn2">
+    </form>
+    <!--data to google sheets JS-->
+
+
+
+    
+</div>
+
+
+<!--RETURN A BOOK-->
+<div class ="container2" id="return">
+    <form action="">
+        <h3>Technician: Return A Book</h3>
+        <div class="row">
+            <div class="col4">
+                <div class="inputBox">
+                    <span>BOOK NUMBER</span>
+                    <input type="number" placeholder="Enter book number." required>
+                </div>
+                <div class="inputBox">
+                    <label for="notes">NOTES</label><br>
+                    <textarea name="notes" rows="6" placeholder="Type your notes here..." class="notesinput"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Return Book!" class="submit-btn3">
+    </form>
+    <!--data to google sheets JS-->
+</div>
+
+
+<!--DELETE A BOOK-->
+<div class ="container3" id="delete">
+    <form action="">
+        <h3>Technician: Delete A Book</h3>
+        <div class="row">
+            <div class="col5">
+                <div class="inputBox">
+                    <span>BOOK NUMBER</span>
+                    <input type="number" placeholder="Enter book number." required>
+                </div>
+                <div class="inputBox">
+                    <span>CONFIRMATION TO DELETE BOOK</span>
+                    <input type="number" placeholder="Enter Registered Technician password." required>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Delete Book!" class="submit-btn4">
+    </form>
+    <!--data to google sheets JS-->
+</div>
+
+<!--STUDENT'S PAGE-->
+<!--STUDENT'S MENU PAGE-->
+<div class="studentmenu">
+    <h1>Student<br><span>Page</span></h1>
+    <div class="st-me-body">
+        <div class="st-contain">
+            <a href="#search"><div class="box1"><h2>Search</h2></div></a>
+            <!--on click JS hide/show-->
+
+            <div class="box2">
+                <h2>My Profile</h2>
+            <!--on click JS hide/show-->
+            </div>
+            
+            <div class="box3">
+                <h2>Book of the Day</h2>
+            <!--on click JS hide/show-->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--STUDENT'S SEARCH PAGE-->
+<div class ="contain" id="search">
+    <form action="">
+        <h3>Search for a book</h3>
+        <p>Please fill in at least one field.</p>
+        <div class="row">
+            <div class="column">
+                <div class="inputBox">
+                    <span>BOOK NUMBER</span>
+                    <input type="number" placeholder="Enter book number.">
+                </div>
+                <div class="inputBox">
+                    <span>TITLE</span>
+                    <input type="text" placeholder="Enter title.">
+                </div>
+                <div class="inputBox">
+                    <span>AUTHOR</span>
+                    <input type="text" placeholder="Name of the author.">
+                </div>
+                <div class="inputBox">
+                    <label for="booktype">BOOK TYPE</label><br>
+                        <input type="radio" id="f" name="booktype" value="fiction">
+                        <label for="fiction">Ficition</label><br>
+                        <input type="radio" id="nf" name="booktype" value="nonfiction">
+                        <label for="nonfiction">Non-Fiction</label><br>
+                        <input type="radio" id="gn" name="booktype" value="graphicnovel">
+                        <label for="graphicnovel">Graphic Novel</label><br>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="inputBox">
+                    <label for="pubdate">PUBLICATION DATE</label><br>
+                    <select name="pubdate" id="pubdate" class="pubdate">
+                        <option value="b2000">Before 2000</option>
+                        <option value="2001-2005">2001-2005</option>
+                        <option value="2006-2010">2006-2010</option>
+                        <option value="2011-2015">2011-2015</option>
+                        <option value="2016-2020">2016-2020</option>
+                        <option value="2021-2023">2016-2020</option>
+                    </select>
+                </div>
+                <br>
+            </div>
+        </div>
+        <input type="submit" value="Search for a book!" class="submit-student">
+    </form>
+    <!--data to google sheets JS-->
+</div>
+
+<!--Student Search Results-->
+
+<div class="searchresults">
+    
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

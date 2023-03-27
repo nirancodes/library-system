@@ -1,0 +1,607 @@
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+/*LIBRARY TECHNICIAN'S MENU PAGE*/
+
+.menu{
+    background:linear-gradient(to bottom right, #d6d3dd, #2f2e30);
+}
+.menu-title1{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 50px;
+}
+.menu-body{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-container{
+    display: flex; 
+    max-width: 400px; 
+    flex-wrap: wrap;
+}
+/*1*/
+.menu-tile1{
+    height: 220px; 
+    width: calc(55% - 30px);
+    background-color: #c80e0e;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.menu-tile1:hover{
+    background-color: #8f1313;
+}
+
+.menu-tile1:hover>i{
+    transform: scale(1.1);
+}
+
+
+.menu-tile1:nth-child(2), .menu-tile1:nth-child(4){
+    margin-left: 15px;
+}
+
+.menu-tile1 i{
+    color: white;
+    font-size: 50px;
+    transition: all 0.2s ease-out;
+}
+/*2*/
+.menu-tile2{
+    height: 220px; 
+    width: calc(55% - 30px);
+    background-color: #3a2cff;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.menu-tile2:hover{
+    background-color: #2f1cab;
+}
+
+.menu-tile2:hover>i{
+    transform: scale(1.1);
+}
+
+
+.menu-tile2:nth-child(2), .menu-tile2:nth-child(4){
+    margin-left: 15px;
+}
+
+.menu-tile2 i{
+    color: white;
+    font-size: 50px;
+    transition: all 0.2s ease-out;
+}
+/*3*/
+.menu-tile3{
+    height: 220px; 
+    width: calc(55% - 30px);
+    background-color: #9f882e;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.menu-tile3:hover{
+    background-color: #70682c;
+}
+
+.menu-tile3:hover>i{
+    transform: scale(1.1);
+}
+
+
+.menu-tile3:nth-child(2), .menu-tile3:nth-child(4){
+    margin-left: 15px;
+}
+
+.menu-tile3 i{
+    color: white;
+    font-size: 50px;
+    transition: all 0.2s ease-out;
+}
+/*4*/
+.menu-tile4{
+    height: 220px; 
+    width: calc(55% - 30px);
+    background-color: #38383a;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.menu-tile4:hover{
+    background-color: #1e1e1f;
+}
+
+.menu-tile4:hover>i{
+    transform: scale(1.1);
+}
+
+
+.menu-tile4:nth-child(2), .menu-tile4:nth-child(4){
+    margin-left: 15px;
+}
+
+.menu-tile4 i{
+    color: white;
+    font-size: 50px;
+    transition: all 0.2s ease-out;
+}
+
+.menu-title{
+    font-family: sans-serif;
+    font-size: 25px;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+/*ADD A BOOK*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #cc2e2e, black);
+    padding-bottom: 70px;
+}
+.container h3{
+    text-align: center;
+}
+.container form{
+    padding: 20px;
+    width: 700px; 
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container form .row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.container form .row .col1{
+    flex: 1 1 250px;
+}
+
+.container form .row .col1 .inputBox{
+    margin: 15px 0;
+}
+
+.container form .row .col1 .inputBox span{
+    margin-bottom: 5px;
+    display:block;
+}
+
+
+.container form .row .col1 .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px; 
+    font-size: 15px; 
+    text-transform: none;
+}
+
+.pubdate{
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+.notesinput{
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #ae2727;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn:hover{
+    background: #ccc;
+}
+
+
+/*CHECKOUT BOOK*/
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #111111, rgb(110, 108, 108));
+    padding-bottom: 70px;
+}
+.container1 h3{
+    text-align: center;
+}
+.container1 form{
+    padding: 20px;
+    width: 700px; 
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container1 form .row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.container1 form .row .col3{
+    flex: 1 1 250px;
+}
+
+.container1 form .row .col3 .inputBox{
+    margin: 15px 0;
+}
+
+.container1 form .row .col3 .inputBox span{
+    margin-bottom: 5px;
+    display:block;
+}
+
+
+.container1 form .row .col3 .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px; 
+    font-size: 15px; 
+    text-transform: none;
+}
+
+.submit-btn2{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #373535;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn2:hover{
+    background: #ccc;
+}
+
+/*RETURN BOOK*/ 
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #917b47, black);
+    padding-bottom: 70px;
+}
+.container2 h3{
+    text-align: center;
+}
+.container2 form{
+    padding: 20px;
+    width: 700px; 
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container2 form .row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.container2 form .row .col4{
+    flex: 1 1 250px;
+}
+
+.container2 form .row .col4 .inputBox{
+    margin: 15px 0;
+}
+
+.container2 form .row .col4 .inputBox span{
+    margin-bottom: 5px;
+    display:block;
+}
+
+
+.container2 form .row .col4 .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px; 
+    font-size: 15px; 
+    text-transform: none;
+}
+
+.submit-btn3{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #a27b48;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn3:hover{
+    background: #ccc;
+}
+
+/*Delete Book*/
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #2d38ac, black);
+    
+    padding-bottom: 70px;
+}
+.container3 h3{
+    text-align: center;
+}
+.container3 form{
+    padding: 20px;
+    width: 700px; 
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.container3 form .row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.container3 form .row .col5{
+    flex: 1 1 250px;
+}
+
+.container3 form .row .col5 .inputBox{
+    margin: 15px 0;
+}
+
+.container3 form .row .col5 .inputBox span{
+    margin-bottom: 5px;
+    display:block;
+}
+
+
+.container3 form .row .col5 .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px; 
+    font-size: 15px; 
+    text-transform: none;
+}
+
+.submit-btn4{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #2d38ac;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-btn4:hover{
+    background: #ccc;
+}
+
+/*STUDENT MENU PAGE*/
+
+.studentmenu{
+    background:linear-gradient(to bottom right, #000000, #bf99e6);
+}
+.studentmenu h1{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+.st-me-body{
+    padding: 0;
+    margin: 0; 
+    height: 70vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+}
+
+.st-contain{
+    width: 90%; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+/*1*/
+.box1{
+    height: 300px; 
+    color: white;
+    border: 4px solid rgb(88, 12, 12); 
+    position: relative; 
+    border-radius: 20px;
+    background: red;
+
+}
+.box1 h2{
+    text-transform: uppercase;
+    font-family: sans-serif; 
+    margin: 0; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*2*/
+.box2{
+    height: 300px; 
+    color: white;
+    border: 4px solid rgb(13, 77, 13); 
+    position: relative; 
+    border-radius: 20px;
+    background: green;
+
+}
+.box2 h2{
+    text-transform: uppercase;
+    font-family: sans-serif; 
+    margin: 0; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*3*/
+.box3{
+    height: 300px; 
+    color: black;
+    border: 4px solid rgb(179, 159, 48); 
+    position: relative; 
+    border-radius: 20px;
+    background: yellow;
+
+}
+.box3 h2{
+    text-transform: uppercase;
+    font-family: sans-serif; 
+    margin: 0; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*SEARCH FOR A BOOK - STUDENT*/ 
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #7910f0, #2f2e30);
+    padding-bottom: 70px;
+}
+.contain h3{
+    text-align: center;
+}
+
+.contain p{
+    text-align: center;
+}
+.contain form{
+    padding: 20px;
+    width: 700px; 
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.contain form .row{
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px;
+}
+
+.contain form .row .column{
+    flex: 1 1 250px;
+}
+
+.contain form .row .column .inputBox{
+    margin: 15px 0;
+}
+
+.contain form .row .column .inputBox span{
+    margin-bottom: 5px;
+    display:block;
+}
+
+
+.contain form .row .column .inputBox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px; 
+    font-size: 15px; 
+    text-transform: none;
+}
+
+.pubdate{
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.submit-student{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: #871db8;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.submit-student:hover{
+    background: #ccc;
+}
+
+/*student search results*/ 
